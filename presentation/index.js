@@ -501,26 +501,26 @@ export default class Presentation extends React.Component {
           <Heading size={1} caps textColor="white" margin="0px 0 50px 0px"  >
             Références
           </Heading>
-          <Text >
-            <Link textColor="white"  href="https://github.com/nmengin/jboss-eap-quickstarts">Github jboss-eap-quickstarts</Link>
+          <Text fit >
+            <Link textColor="white"  href="https://www.youtube.com/watch?v=f8uQ3ecEutY">www.youtube.com/Unikernels</Link>
           </Text>
-          <Text >
-            <Link textColor="white"  href="https://github.com/nmengin/traefik/tree/feature/libkv-migration">Github libkv-migration</Link>
+          <Text fit>
+            <Link textColor="white"  href="https://www.youtube.com/watch?v=KMttioiBQc0">www.youtube.com/DockerToolBox</Link>
           </Text>
-          <Text >
-            <Link textColor="white"  href="https://www.youtube.com/watch?v=f8uQ3ecEutY">Unikernels and Docker (Youtube)</Link>
+          <Text fit margin="20px 0px 0px 0px" >
+            <Link textColor="white"  href="https://github.com/nmengin/jboss-eap-quickstarts">github.com/.../jboss-eap-quickstarts</Link>
           </Text>
-          <Text >
-            <Link textColor="white"  href="https://www.youtube.com/watch?v=KMttioiBQc0">Boot2Docker (Youtube)</Link>
+          <Text fit >
+            <Link textColor="white"  href="https://github.com/nmengin/traefik/tree/feature/libkv-migration">github.com/.../libkv-migration</Link>
           </Text>
-          <Text >
-            <Link textColor="white"  href="https://emilevauge.github.io/devFestToulouse2017">github prez</Link>
+          <Text margin="20px 0 0px 0px" fit >
+            <Link textColor="white"  href="https://github.com/nmengin/capitoledulibre/tree/2017">github.com/nmengin/capitoledulibre/...</Link>
           </Text>
-          <Text >
-            <Link textColor="white"  href="https://emilevauge.github.io/devFestToulouse2017">dockerhub prez</Link>
+          <Text fit >
+            <Link textColor="white"  href="https://emilevauge.github.io/devFestToulouse2017">Image Docker Présentation</Link>
           </Text>
-          <Text >
-            <Link textColor="white"  href="https://traefik.io">traefik.io</Link>
+          <Text margin="20px 0 0px 0px" fit >
+            <Link textColor="white"  href="https://github.com/containous/traefik/">github.com/containous/traefik</Link>
           </Text>
         </Slide>
 
