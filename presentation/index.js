@@ -83,12 +83,16 @@ export default class Presentation extends React.Component {
           <Heading size={4} textColor="black">
             $ docker inspect me
             </Heading>
-          <List fit textColor="white">
-            <Appear><ListItem>Développeur & DevOps</ListItem></Appear>
-            <Appear><ListItem>Développeur @ Containous</ListItem></Appear>
-            <Appear><ListItem>Mainteneur de <Link href="https://traefik.io">traefik.io</Link></ListItem></Appear>
-            <Appear><ListItem>❤ Java, GO, Shell, Docker World ❤</ListItem></Appear>
-          </List>
+          <Appear><List fit textColor="white">
+            <ListItem>Développeur & DevOps</ListItem>
+          </List></Appear>
+          <Appear><List fit textColor="white">
+            <ListItem>Développeur @ Containous</ListItem>
+            <ListItem>Mainteneur de <Link href="https://traefik.io">traefik.io</Link></ListItem>
+          </List></Appear>
+          <Appear><List fit textColor="white">
+            <ListItem>❤Java Family, GO, Shell, Docker World❤</ListItem>
+          </List></Appear>
         </Slide>
 
         <Slide bgColor="white">
@@ -139,9 +143,9 @@ export default class Presentation extends React.Component {
           <Appear><List fit textColor="white">
             <ListItem  bold>Industrialisation :</ListItem>
             <List fill  margin="0px 0px 0px 40px"  textColor="white">
-              <ListItem>apt-get/yum/pacman + pip (docker-compose)</ListItem>
+              <ListItem>apt-get/yum + pip (docker-compose)</ListItem>
               <ListItem>Script (Ansible) pour le tuning</ListItem>
-              <ListItem>!! Droits root !!</ListItem>
+              <ListItem bold>!! Droits root !!</ListItem>
             </List>
           </List></Appear>
         </Slide>
@@ -245,6 +249,7 @@ export default class Presentation extends React.Component {
             <li>Parler des différentes version d un soft entre branche master et hotfix</li>
             <li>Evoquer programme MTA de Docker avec DCA mais que ce n&apos;est pas le but dela prez</li>
           </ol>
+          <h2>!!! ARRETER JBOSS !!!</h2>
         </Notes>
           <Heading fit size={4}>
           $ docker inspect kitchensik:no-docker
@@ -254,8 +259,10 @@ export default class Presentation extends React.Component {
             <List margin="0px 0px 0px 40px"  fill textColor="white">
               <Appear><ListItem>Rapide à mettre en place</ListItem></Appear>
             </List>
-            <Appear><ListItem>Production : RP/Nginx/JBoss/MariaDB</ListItem></Appear>
+            <Appear><ListItem>Production : </ListItem></Appear>
             <List margin="0px 0px 0px 40px"  fill textColor="white">
+              <Appear><ListItem>RP/Srv_web/Srv_app/DB</ListItem></Appear>
+              <Appear><ListItem>Traefik/Nginx/JBoss/MariaDB</ListItem></Appear>
               <Appear><ListItem>Développement != Production</ListItem></Appear>
             </List>
           </List>
@@ -295,7 +302,7 @@ export default class Presentation extends React.Component {
           <Appear><List fit textColor="white">
             <ListItem>Partage des images : Docker Registry</ListItem>
             <ListItem>Partage des fichiers : SCM</ListItem>
-            <ListItem bold>!! Ne pas cacher Docker aux développeurs !!</ListItem>
+            <ListItem bold>!! Ne pas cacher Docker !!</ListItem>
         </List></Appear>
         </Slide>
 
@@ -321,17 +328,6 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Evolution versions + facile</ListItem></Appear>
             <Appear><ListItem bold>!! Pas plus de stabilité !!</ListItem></Appear>
           </List>
-        </Slide>
-
-        <Slide bgColor="white">
-          <Heading size={1} caps textColor="primary" textSize="170">
-            I have
-            </Heading>
-          <Image src={images.traefikSticker.replace("/", "")} height="200" margin="0px 100px 0px 0px" />
-          <Image src={images.dockerSticker.replace("/", "")} height="200" />
-          <Heading size={1} caps textColor="primary">
-            Stickers!
-            </Heading>
         </Slide>
 
         <Slide bgColor="black">
@@ -368,7 +364,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <List fit textColor="white">
             <Appear><ListItem>Reverse Proxy Dynamique Open Source</ListItem></Appear>
-            <Appear><ListItem>S&apos;interface avec de nombreux outils</ListItem></Appear>
+            <Appear><ListItem>S&apos;interface avec de nombreux outils :</ListItem></Appear>
             <Appear><List margin="0px 0px 0px 40px" fill textColor="white">
               <ListItem>Docker (Swarm-Mode), Kubernetes...</ListItem>
               <ListItem>ETCD,Consul,Eureka...</ListItem>
@@ -501,47 +497,38 @@ export default class Presentation extends React.Component {
           <Heading size={1} caps textColor="white" margin="0px 0 50px 0px"  >
             Références
           </Heading>
-          <Text fit >
-            <Link textColor="white"  href="https://www.youtube.com/watch?v=f8uQ3ecEutY">www.youtube.com/Unikernels</Link>
-          </Text>
-          <Text fit>
-            <Link textColor="white"  href="https://www.youtube.com/watch?v=KMttioiBQc0">www.youtube.com/DockerToolBox</Link>
-          </Text>
-          <Text fit margin="20px 0px 0px 0px" >
-            <Link textColor="white"  href="https://github.com/nmengin/jboss-eap-quickstarts">github.com/.../jboss-eap-quickstarts</Link>
-          </Text>
-          <Text fit >
-            <Link textColor="white"  href="https://github.com/nmengin/traefik/tree/feature/libkv-migration">github.com/.../libkv-migration</Link>
-          </Text>
-          <Text margin="20px 0 0px 0px" fit >
-            <Link textColor="white"  href="https://github.com/nmengin/capitoledulibre/tree/2017">github.com/nmengin/capitoledulibre/...</Link>
-          </Text>
-          <Text fit >
-            <Link textColor="white"  href="https://emilevauge.github.io/devFestToulouse2017">Image Docker Présentation</Link>
-          </Text>
-          <Text margin="20px 0 0px 0px" fit >
-            <Link textColor="white"  href="https://github.com/containous/traefik/">github.com/containous/traefik</Link>
-          </Text>
+          <List fill textColor="white">
+            <ListItem><Link href="https://www.youtube.com/watch?v=KMttioiBQc0">www.youtube.com/DockerToolBox</Link></ListItem>
+            <ListItem><Link href="https://www.youtube.com/watch?v=f8uQ3ecEutY">www.youtube.com/Unikernels</Link></ListItem>
+            <ListItem><Link href="https://github.com/nmengin/jboss-eap-quickstarts">github.com/.../jboss-eap-quickstarts</Link></ListItem>
+            <ListItem><Link href="https://github.com/nmengin/traefik/tree/feature/libkv-migration">github.com/.../libkv-migration</Link></ListItem>
+            <ListItem><Link href="https://github.com/nmengin/capitoledulibre/tree/2017">github.com/nmengin/capitoledulibre/...</Link></ListItem>
+            <ListItem><Link href="https://hub.docker.com/r/nmengin/presentation/">hub.docker.com/r/nmengin/...</Link></ListItem>
+            <ListItem><Link href="https://github.com/containous/traefik/">github.com/containous/traefik</Link></ListItem>
+          </List>
         </Slide>
 
         <Slide bgColor="white">
           <Heading size={1} caps textColor="primary" textSize="170">
-            I have
+            Il y a
             </Heading>
           <Image src={images.traefikSticker.replace("/", "")} height="200" margin="0px 100px 0px 0px" />
           <Image src={images.dockerSticker.replace("/", "")} height="200" />
           <Heading size={1} caps textColor="primary">
-            Stickers!
+            des Stickers!
             </Heading>
         </Slide>
 
         <Slide bgColor="primary">
           <Heading size={1} caps textColor="white" >
-            Thank you!
+            Merci!
           </Heading>
-          <Image src={images.dockerLove.replace("/", "")} height="400px" />
+          <Image src={images.dockerLove.replace("/", "")} height="400px" margin="50px 0px 50px 0px"  />
           <Text >
-            <Link href="https://github.com/nicoMengin">@nicoMengin</Link>
+            <Link href="https://twitter.com/@nicomengin">@nicoMengin</Link>
+          </Text>
+          <Text >
+            <Link href="https://github.com/nmengin">github.com/nmengin</Link>
           </Text>
         </Slide>
       </Deck>
